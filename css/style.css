@@ -442,6 +442,7 @@
 .service .service-content-inner .service-content p,
 .service .service-content-inner .service-icon i {
     transition: 0.5s;
+    color: #000;
 }
 
 .service .service-content-inner:hover .service-content h5,
