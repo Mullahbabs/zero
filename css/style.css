@@ -413,7 +413,9 @@
     position: relative;
     display: inline-block;
     text-transform: uppercase;
-    color: var(--bs-primary);
+    color: #000;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 .about .container .section-about-title::before {
@@ -425,6 +427,7 @@
     transform: translateY(-50%);
     margin-right: -50px;
     border: 1px solid var(--bs-primary) !important;
+    border-radius: 10px;
 }
 /*** About End ***/
 
