@@ -306,6 +306,8 @@
 .carousel-header .carousel-control-prev,
 .carousel-header .carousel-control-next {
     background: transparent;
+    
+    
 }
 
 .carousel-header .carousel-control-prev .carousel-control-prev-icon {
@@ -350,7 +352,8 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    background-size: cover;
+    transition: 0.5s;
 }
 
 .carousel-header .carousel-inner .carousel-item .carousel-caption  {
