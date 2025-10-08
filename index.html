@@ -1148,7 +1148,7 @@
            // Use EmailJS to send form data
            emailjs.sendForm('service_6e8nzp3', 'template_fraswac', '#contactForm')
            .then((result) => {
-               alert("Reservation successfully!");
+               alert("Reservation successful!");
                document.getElementById("contactForm").reset();  // Optional: reset form after submission
            }, (error) => {
                alert("Failed to send form: " + error.text);
