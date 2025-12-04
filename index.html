@@ -1,1161 +1,2015 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="utf-8">
-        <title>Zero Negative</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
-
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
-
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-        <!-- Libraries Stylesheet -->
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-
-
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
-    <body>
-
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zero Arena - ZeroNegative Nightlife</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header with Hero Carousel -->
+    <header>
+      <!-- Navigation Bar -->
+      <nav>
+        <div class="logo">ZERO <span>ARENA</span></div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#booking">Reservations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-toggle">
+          <i class="fas fa-bars"></i>
         </div>
-        <!-- Spinner End -->
+      </nav>
 
-        <!-- Topbar Start -->
-        <div class="container-fluid bg-primary px-5 d-none d-lg-block">
-            <div class="row gx-0">
-                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center" style="height: 45px;">
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-center text-lg-end">
-                    <div class="d-inline-flex align-items-center" style="height: 45px;">
-                        <h1 class="m-0"></i>ZeroNegative</h1>    
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- Hero Carousel -->
+      <div class="carousel">
+        <!-- Slide 1 -->
+        <div class="carousel-slide slide-1 active"></div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-slide slide-2"></div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-slide slide-3"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+          <h1 class="main-heading">
+            <span class="gradient-text">KING OF CALABAR</span>
+            NIGHT LIFE
+          </h1>
+          <p class="sub-heading">
+            Experience the ultimate nightlife destination in Calabar
+          </p>
+          <div class="announcement">3RD ANNIVERSARY</div>
+          <a href="#events" class="cta-button">Join The Celebration</a>
         </div>
-        <!-- Topbar End -->
 
-        <!-- Navbar & Hero Start -->
-        <div class="container-fluid position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0"><img src="img/zero/zerolog1.png"></i>CLUBZERO</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
+        <!-- Carousel Dots -->
+        <div class="carousel-dots">
+          <div class="dot active" data-slide="0"></div>
+          <div class="dot" data-slide="1"></div>
+          <div class="dot" data-slide="2"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2 class="section-title">
+        Celebrating <span>3 Years</span> of Excellence
+      </h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            For three incredible years,
+            <span class="highlight">Zero Arena</span> has reigned supreme as
+            Calabar's premier nightlife destination. We've transformed evenings
+            into unforgettable experiences, with world-class music, dazzling
+            lights, and an atmosphere that pulses with energy.
+          </p>
+          <p>
+            Our journey began with a vision to create a space where music,
+            culture, and celebration converge. Today, we stand tall as the
+            undisputed <span class="highlight">King of Calabar Nightlife</span>,
+            hosting legendary events that have become the talk of the town.
+          </p>
+          <p>
+            As we mark our 3rd anniversary, we're celebrating not just a
+            milestone, but a legacy of unforgettable nights, electrifying
+            performances, and a community of nightlife enthusiasts who make
+            every event special.
+          </p>
+        </div>
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Zero Arena Nightclub"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" style="background: rgba(15, 15, 30, 0.7)">
+      <h2 class="section-title">Anniversary <span>Events</span></h2>
+      <div class="events-container">
+        <div class="event-card">
+          <div
+            class="event-img"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            "
+          ></div>
+          <div class="event-content">
+            <h3 class="event-title">Opening Night Gala</h3>
+            <div class="event-date">October 15, 2023 | 8:00 PM</div>
+            <p>
+              Kick off our anniversary celebrations with an exclusive gala
+              featuring international DJs, live performances, and premium
+              cocktails.
+            </p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div
+            class="event-img"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80');
+            "
+          ></div>
+          <div class="event-content">
+            <h3 class="event-title">Legends Night</h3>
+            <div class="event-date">October 20, 2023 | 9:00 PM</div>
+            <p>
+              A special night honoring the artists and DJs who've made Zero
+              Arena legendary. Featuring surprise guest performances.
+            </p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div
+            class="event-img"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            "
+          ></div>
+          <div class="event-content">
+            <h3 class="event-title">Grand Finale Party</h3>
+            <div class="event-date">October 27, 2023 | 10:00 PM</div>
+            <p>
+              The epic conclusion to our anniversary celebrations with
+              fireworks, giveaways, and non-stop music till sunrise.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Operational Activities Section -->
+    <section id="operations">
+      <div class="container">
+        <h2 class="section-title">Weekly <span>Activities</span></h2>
+        <p class="section-subtitle">
+          Experience the rhythm of Calabar's nightlife with our weekly lineup of
+          electrifying events. Every night offers a unique atmosphere at Zero
+          Arena.
+        </p>
+
+        <div class="activities-grid">
+          <!-- Monday -->
+          <div class="activity-card monday">
+            <div class="activity-icon">
+              <i class="fas fa-play"></i>
+            </div>
+            <div class="activity-content">
+              <div class="activity-day">Monday</div>
+              <h3 class="activity-title">Playhouse Mondays</h3>
+              <p class="activity-description">
+                Join DJ DTUNEZ & DJ STARZY for a Premium exclusive Monday night
+                experience, jumpstarting and energizing your week to only
+                positivity.
+              </p>
+              <div class="activity-time">8:00 PM - 2:00 AM</div>
+            </div>
+          </div>
+
+          <!-- Tuesday - Club closed or special event -->
+          <div class="activity-card tuesday">
+            <div class="activity-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="activity-content">
+              <div class="activity-day">Tuesday</div>
+              <h3 class="activity-title">Special Events Night</h3>
+              <p class="activity-description">
+                Exclusive private events, artist showcases, and special
+                performances. Check our social media for weekly Tuesday
+                programming.
+              </p>
+              <div class="activity-time">By Special Arrangement</div>
+            </div>
+          </div>
+
+          <!-- Wednesday -->
+          <div class="activity-card wednesday">
+            <div class="activity-icon">
+              <i class="fas fa-guitar"></i>
+            </div>
+            <div class="activity-content">
+              <div class="activity-day">Wednesday</div>
+              <h3 class="activity-title">Brews & Blues</h3>
+              <p class="activity-description">
+                Midweek blues? We've got the cure. Come to Office Pub every
+                Wednesday for Blues & Brews. Enjoy live blues performances while
+                savoring a selection of craft beers and classic pub fare.
+              </p>
+              <div class="activity-time">7:00 PM - 12:00 AM</div>
+            </div>
+          </div>
+
+          <!-- Thursday -->
+          <div class="activity-card thursday">
+            <div class="activity-icon">
+              <i class="fas fa-plug"></i>
+            </div>
+            <div class="activity-content">
+              <div class="activity-day">Thursday</div>
+              <h3 class="activity-title">Electric Thursdays</h3>
+              <p class="activity-description">
+                Kickstart your weekend early with Electric Thursdays at Club
+                Zero. Enjoy electrifying music, drink specials, and an
+                unbeatable atmosphere to get you ready for the weekend.
+              </p>
+              <div class="activity-time">9:00 PM - 3:00 AM</div>
+            </div>
+          </div>
+
+          <!-- Friday -->
+          <div class="activity-card friday">
+            <div class="activity-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <div class="activity-content">
+              <div class="activity-day">Friday</div>
+              <h3 class="activity-title">Neon Fridays</h3>
+              <p class="activity-description">
+                Dive into a vibrant experience with neon decorations, UV lights,
+                and energetic music from top DJs. Get ready for a dazzling night
+                of dance, drinks, & unforgettable memories.
+              </p>
+              <div class="activity-time">10:00 PM - 4:00 AM</div>
+            </div>
+          </div>
+
+          <!-- Saturday -->
+          <div class="activity-card saturday">
+            <div class="activity-icon">
+              <i class="fas fa-music"></i>
+            </div>
+            <div class="activity-content">
+              <div class="activity-day">Saturday</div>
+              <h3 class="activity-title">Midnight Madness</h3>
+              <p class="activity-description">
+                Join us every Saturday for Midnight Madness, where the music is
+                louder, the lights are brighter, and the party doesn't stop.
+              </p>
+              <div class="activity-time">10:00 PM - 5:00 AM</div>
+            </div>
+          </div>
+
+          <!-- Sunday -->
+          <div class="activity-card sunday">
+            <div class="activity-icon">
+              <i class="fas fa-moon"></i>
+            </div>
+            <div class="activity-content">
+              <div class="activity-day">Sunday</div>
+              <h3 class="activity-title">Sunset Sundays</h3>
+              <p class="activity-description">
+                Cap off your weekend with Sunday Sunset Sessions at Office Pub.
+                Enjoy live bands playing chill and relaxing music as the sun
+                sets, creating the perfect backdrop for a serene evening.
+              </p>
+              <div class="activity-time">5:00 PM - 11:00 PM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section
+      id="gallery"
+      style="
+        padding: 1rem 5%;
+        background: linear-gradient(135deg, #0a0a1a 0%, #1a0a1a 100%);
+        position: relative;
+        overflow: hidden;
+      "
+    >
+      <div class="container" style="position: relative; z-index: 2">
+        <h2
+          class="section-title"
+          style="text-align: center; margin-bottom: 1rem"
+        >
+          ZERO GALLERY<span style="color: var(--primary)">.</span>
+        </h2>
+        <p
+          class="section-subtitle"
+          style="
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            font-size: 1.1rem;
+          "
+        >
+          Experience the vibrant energy of Zero Arena through our visual journey
+        </p>
+
+        <!-- Gallery Tabs -->
+        <div class="gallery-tabs">
+          <div class="tabs-header">
+            <div class="tab active" data-tab="all">ALL</div>
+            <div class="tab" data-tab="clubzero">CLUBZERO</div>
+            <div class="tab" data-tab="officepub">OFFICEPUB</div>
+            <div class="tab" data-tab="playhouse">PLAYHOUSE MONDAYS</div>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tabs-content">
+            <!-- Tab 1: All -->
+            <div class="tab-pane active" id="all">
+              <!-- Top Row Ticker - Moves Left -->
+              <div class="ticker-row top-row">
+                <div class="ticker-track">
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero Nightlife"
+                      data-category="clubzero"
+                    />
+                    <div class="image-overlay">
+                      <span>MIDNIGHT MADNESS</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Interior"
+                      data-category="officepub"
+                    />
+                    <div class="image-overlay">
+                      <span>BREWS & BLUES</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="DJ Performance"
+                      data-category="clubzero"
+                    />
+                    <div class="image-overlay">
+                      <span>DJ STARZY</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Live Band"
+                      data-category="officepub"
+                    />
+                    <div class="image-overlay">
+                      <span>LIVE PERFORMANCE</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Crowd Dancing"
+                      data-category="clubzero"
+                    />
+                    <div class="image-overlay">
+                      <span>ELECTRIC THURSDAYS</span>
+                    </div>
+                  </div>
+                  <!-- Duplicate for seamless loop -->
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero Nightlife"
+                      data-category="clubzero"
+                    />
+                    <div class="image-overlay">
+                      <span>MIDNIGHT MADNESS</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Interior"
+                      data-category="officepub"
+                    />
+                    <div class="image-overlay">
+                      <span>BREWS & BLUES</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="DJ Performance"
+                      data-category="clubzero"
+                    />
+                    <div class="image-overlay">
+                      <span>DJ STARZY</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Live Band"
+                      data-category="officepub"
+                    />
+                    <div class="image-overlay">
+                      <span>LIVE PERFORMANCE</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Crowd Dancing"
+                      data-category="clubzero"
+                    />
+                    <div class="image-overlay">
+                      <span>ELECTRIC THURSDAYS</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom Row Ticker - Moves Right -->
+              <div class="ticker-row bottom-row">
+                <div class="ticker-track">
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Neon Lights"
+                      data-category="clubzero"
+                    />
+                    <div class="image-overlay">
+                      <span>NEON FRIDAYS</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1541532713592-79a0317b6b77?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Craft Beers"
+                      data-category="officepub"
+                    />
+                    <div class="image-overlay">
+                      <span>CRAFT BEERS</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Party Crowd"
+                      data-category="clubzero"
+                    />
+                    <div class="image-overlay">
+                      <span>WEEKEND VIBES</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Pub Atmosphere"
+                      data-category="officepub"
+                    />
+                    <div class="image-overlay">
+                      <span>CHILL VIBES</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="DJ Setup"
+                      data-category="playhouse"
+                    />
+                    <div class="image-overlay">
+                      <span>DJ DTUNEZ</span>
+                    </div>
+                  </div>
+                  <!-- Duplicate for seamless loop -->
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Neon Lights"
+                      data-category="clubzero"
+                    />
+                    <div class="image-overlay">
+                      <span>NEON FRIDAYS</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1541532713592-79a0317b6b77?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Craft Beers"
+                      data-category="officepub"
+                    />
+                    <div class="image-overlay">
+                      <span>CRAFT BEERS</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Party Crowd"
+                      data-category="clubzero"
+                    />
+                    <div class="image-overlay">
+                      <span>WEEKEND VIBES</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Pub Atmosphere"
+                      data-category="officepub"
+                    />
+                    <div class="image-overlay">
+                      <span>CHILL VIBES</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="DJ Setup"
+                      data-category="playhouse"
+                    />
+                    <div class="image-overlay">
+                      <span>DJ DTUNEZ</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2: Club Zero -->
+            <div class="tab-pane" id="clubzero">
+              <div class="ticker-row top-row">
+                <div class="ticker-track">
+                  <!-- Club Zero images only -->
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero Main Floor"
+                    />
+                    <div class="image-overlay">
+                      <span>MAIN FLOOR</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero VIP"
+                    />
+                    <div class="image-overlay">
+                      <span>VIP SECTION</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero Neon"
+                    />
+                    <div class="image-overlay">
+                      <span>NEON LIGHTS</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero DJ"
+                    />
+                    <div class="image-overlay">
+                      <span>DJ BOOTH</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero Dance"
+                    />
+                    <div class="image-overlay">
+                      <span>DANCE FLOOR</span>
+                    </div>
+                  </div>
+                  <!-- Duplicate for loop -->
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero Main Floor"
+                    />
+                    <div class="image-overlay">
+                      <span>MAIN FLOOR</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero VIP"
+                    />
+                    <div class="image-overlay">
+                      <span>VIP SECTION</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero Neon"
+                    />
+                    <div class="image-overlay">
+                      <span>NEON LIGHTS</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero DJ"
+                    />
+                    <div class="image-overlay">
+                      <span>DJ BOOTH</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero Dance"
+                    />
+                    <div class="image-overlay">
+                      <span>DANCE FLOOR</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ticker-row bottom-row">
+                <div class="ticker-track">
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1519677100203-7c61d0b01354?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero Bar"
+                    />
+                    <div class="image-overlay">
+                      <span>MAIN BAR</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1561047029-3000c68339ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero Lights"
+                    />
+                    <div class="image-overlay">
+                      <span>LIGHT SHOW</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1568727994187-84f4c20e1fe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero Entrance"
+                    />
+                    <div class="image-overlay">
+                      <span>ENTRANCE</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero Sound"
+                    />
+                    <div class="image-overlay">
+                      <span>SOUND SYSTEM</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1577741314755-048d8525d31e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero Crowd"
+                    />
+                    <div class="image-overlay">
+                      <span>ENERGETIC CROWD</span>
+                    </div>
+                  </div>
+                  <!-- Duplicate for loop -->
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1519677100203-7c61d0b01354?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero Bar"
+                    />
+                    <div class="image-overlay">
+                      <span>MAIN BAR</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1561047029-3000c68339ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero Lights"
+                    />
+                    <div class="image-overlay">
+                      <span>LIGHT SHOW</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1568727994187-84f4c20e1fe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero Entrance"
+                    />
+                    <div class="image-overlay">
+                      <span>ENTRANCE</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero Sound"
+                    />
+                    <div class="image-overlay">
+                      <span>SOUND SYSTEM</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1577741314755-048d8525d31e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Club Zero Crowd"
+                    />
+                    <div class="image-overlay">
+                      <span>ENERGETIC CROWD</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3: Office Pub -->
+            <div class="tab-pane" id="officepub">
+              <div class="ticker-row top-row">
+                <div class="ticker-track">
+                  <!-- Office Pub images only -->
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Interior"
+                    />
+                    <div class="image-overlay">
+                      <span>MAIN HALL</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Live Music"
+                    />
+                    <div class="image-overlay">
+                      <span>LIVE BAND</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1541532713592-79a0317b6b77?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Drinks"
+                    />
+                    <div class="image-overlay">
+                      <span>CRAFT SELECTION</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Atmosphere"
+                    />
+                    <div class="image-overlay">
+                      <span>CHILL ZONE</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Food"
+                    />
+                    <div class="image-overlay">
+                      <span>PUB FARE</span>
+                    </div>
+                  </div>
+                  <!-- Duplicate for loop -->
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Interior"
+                    />
+                    <div class="image-overlay">
+                      <span>MAIN HALL</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Live Music"
+                    />
+                    <div class="image-overlay">
+                      <span>LIVE BAND</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1541532713592-79a0317b6b77?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Drinks"
+                    />
+                    <div class="image-overlay">
+                      <span>CRAFT SELECTION</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Atmosphere"
+                    />
+                    <div class="image-overlay">
+                      <span>CHILL ZONE</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Food"
+                    />
+                    <div class="image-overlay">
+                      <span>PUB FARE</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ticker-row bottom-row">
+                <div class="ticker-track">
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1582196016295-f8c8bd4b3a9f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Terrace"
+                    />
+                    <div class="image-overlay">
+                      <span>OUTDOOR TERRACE</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Games"
+                    />
+                    <div class="image-overlay">
+                      <span>GAME ZONE</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Bar"
+                    />
+                    <div class="image-overlay">
+                      <span>WOODEN BAR</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1515825838458-f2a94b20105a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Cozy"
+                    />
+                    <div class="image-overlay">
+                      <span>COZY CORNER</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Sunset"
+                    />
+                    <div class="image-overlay">
+                      <span>SUNSET VIEWS</span>
+                    </div>
+                  </div>
+                  <!-- Duplicate for loop -->
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1582196016295-f8c8bd4b3a9f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Terrace"
+                    />
+                    <div class="image-overlay">
+                      <span>OUTDOOR TERRACE</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Games"
+                    />
+                    <div class="image-overlay">
+                      <span>GAME ZONE</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Bar"
+                    />
+                    <div class="image-overlay">
+                      <span>WOODEN BAR</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1515825838458-f2a94b20105a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Cozy"
+                    />
+                    <div class="image-overlay">
+                      <span>COZY CORNER</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Office Pub Sunset"
+                    />
+                    <div class="image-overlay">
+                      <span>SUNSET VIEWS</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 4: Playhouse Mondays -->
+            <div class="tab-pane" id="playhouse">
+              <div class="ticker-row top-row">
+                <div class="ticker-track">
+                  <!-- Playhouse Mondays images only -->
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday DJ"
+                    />
+                    <div class="image-overlay">
+                      <span>DJ DTUNEZ</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Mix"
+                    />
+                    <div class="image-overlay">
+                      <span>DJ STARZY</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Setup"
+                    />
+                    <div class="image-overlay">
+                      <span>PREMIUM SETUP</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Lights"
+                    />
+                    <div class="image-overlay">
+                      <span>SPECIAL LIGHTS</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Exclusive"
+                    />
+                    <div class="image-overlay">
+                      <span>EXCLUSIVE CROWD</span>
+                    </div>
+                  </div>
+                  <!-- Duplicate for loop -->
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday DJ"
+                    />
+                    <div class="image-overlay">
+                      <span>DJ DTUNEZ</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Mix"
+                    />
+                    <div class="image-overlay">
+                      <span>DJ STARZY</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Setup"
+                    />
+                    <div class="image-overlay">
+                      <span>PREMIUM SETUP</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Lights"
+                    />
+                    <div class="image-overlay">
+                      <span>SPECIAL LIGHTS</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Exclusive"
+                    />
+                    <div class="image-overlay">
+                      <span>EXCLUSIVE CROWD</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ticker-row bottom-row">
+                <div class="ticker-track">
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Vibe"
+                    />
+                    <div class="image-overlay">
+                      <span>POSITIVE VIBES</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1469594292607-7bd90f8d3ba4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Energy"
+                    />
+                    <div class="image-overlay">
+                      <span>ENERGETIC START</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1526470498-9ae73c665de8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Sound"
+                    />
+                    <div class="image-overlay">
+                      <span>CRISP SOUND</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Mixing"
+                    />
+                    <div class="image-overlay">
+                      <span>LIVE MIXING</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Equipment"
+                    />
+                    <div class="image-overlay">
+                      <span>PRO EQUIPMENT</span>
+                    </div>
+                  </div>
+                  <!-- Duplicate for loop -->
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Vibe"
+                    />
+                    <div class="image-overlay">
+                      <span>POSITIVE VIBES</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1469594292607-7bd90f8d3ba4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Energy"
+                    />
+                    <div class="image-overlay">
+                      <span>ENERGETIC START</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1526470498-9ae73c665de8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Sound"
+                    />
+                    <div class="image-overlay">
+                      <span>CRISP SOUND</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Mixing"
+                    />
+                    <div class="image-overlay">
+                      <span>LIVE MIXING</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Equipment"
+                    />
+                    <div class="image-overlay">
+                      <span>PRO EQUIPMENT</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Controls -->
+        <div
+          class="gallery-controls"
+          style="text-align: center; margin-top: 3rem"
+        >
+          <button class="gallery-control-btn" id="pauseTicker">
+            <i class="fas fa-pause"></i> Pause Ticker
+          </button>
+          <button class="gallery-control-btn" id="resumeTicker">
+            <i class="fas fa-play"></i> Resume Ticker
+          </button>
+          <div
+            class="speed-control"
+            style="display: inline-block; margin-left: 2rem"
+          >
+            <span style="color: var(--light); margin-right: 1rem">Speed:</span>
+            <button class="speed-btn active" data-speed="1">1x</button>
+            <button class="speed-btn" data-speed="1.5">1.5x</button>
+            <button class="speed-btn" data-speed="2">2x</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Modal -->
+      <div id="imageModal" class="image-modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <div class="modal-image-container">
+            <img id="modalImage" src="" alt="" />
+            <div class="modal-image-info">
+              <h3 id="modalTitle"></h3>
+              <p id="modalDescription"></p>
+            </div>
+          </div>
+          <div class="modal-controls">
+            <button id="prevBtn" class="modal-btn">
+              <i class="fas fa-chevron-left"></i> Previous
+            </button>
+            <button id="nextBtn" class="modal-btn">
+              Next <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section
+      id="booking"
+      style="
+        padding: 6rem 5%;
+        background: linear-gradient(
+          135deg,
+          rgba(10, 10, 26, 0.95) 0%,
+          rgba(20, 10, 30, 0.98) 100%
+        );
+        position: relative;
+        overflow: hidden;
+      "
+    >
+      <div class="container" style="position: relative; z-index: 2">
+        <div class="booking-wrapper">
+          <div class="booking-content">
+            <div class="booking-text">
+              <h5 class="booking-subtitle">RESERVATIONS</h5>
+              <h1 class="booking-title">
+                Book Your <span class="gradient-text">Experience</span>
+              </h1>
+              <p class="booking-description">
+                Secure your spot at Calabar's premier nightlife destination.
+                Whether it's a special celebration or a night out with friends,
+                we'll make it unforgettable.
+              </p>
+              <div class="booking-features">
+                <div class="feature">
+                  <i class="fas fa-crown" style="color: var(--accent)"></i>
+                  <span>VIP Table Service</span>
+                </div>
+                <div class="feature">
+                  <i
+                    class="fas fa-glass-cheers"
+                    style="color: var(--primary)"
+                  ></i>
+                  <span>Bottle Service</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-star" style="color: var(--secondary)"></i>
+                  <span>Premium Experience</span>
+                </div>
+                <div class="feature">
+                  <i
+                    class="fas fa-calendar-check"
+                    style="color: var(--accent)"
+                  ></i>
+                  <span>Flexible Booking</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="booking-form-container">
+            <div class="form-header">
+              <h2 class="form-title">Book Your Table</h2>
+              <div class="deal-badge">
+                <i class="fas fa-gift"></i>
+                <span
+                  >Get
+                  <strong style="color: var(--accent)">20% OFF</strong> when
+                  booking 2 weeks in advance</span
+                >
+              </div>
+            </div>
+
+            <form id="bookingForm" class="booking-form">
+              <div class="form-grid">
+                <!-- Name Field -->
+                <div class="form-group">
+                  <div class="input-with-icon">
+                    <i class="fas fa-user"></i>
+                    <input
+                      type="text"
+                      id="bookingName"
+                      name="name"
+                      placeholder="Your Full Name"
+                      required
+                    />
+                  </div>
+                  <div class="input-label">Full Name</div>
+                </div>
+
+                <!-- Phone Field -->
+                <div class="form-group">
+                  <div class="input-with-icon">
+                    <i class="fas fa-phone"></i>
+                    <input
+                      type="tel"
+                      id="bookingPhone"
+                      name="phone"
+                      placeholder="+234 810 123 4567"
+                      required
+                    />
+                  </div>
+                  <div class="input-label">Phone Number</div>
+                </div>
+
+                <!-- Date Field -->
+                <div class="form-group">
+                  <div class="input-with-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                    <input
+                      type="text"
+                      id="bookingDate"
+                      name="date"
+                      placeholder="Select Date"
+                      onfocus="(this.type='date')"
+                      required
+                    />
+                  </div>
+                  <div class="input-label">Reservation Date</div>
+                </div>
+
+                <!-- Time Field -->
+                <div class="form-group">
+                  <div class="input-with-icon">
+                    <i class="fas fa-clock"></i>
+                    <select id="bookingTime" name="time" required>
+                      <option value="" disabled selected>Select Time</option>
+                      <option value="18:00">6:00 PM - Early Entry</option>
+                      <option value="20:00">8:00 PM - Prime Time</option>
+                      <option value="22:00">10:00 PM - Peak Hours</option>
+                      <option value="00:00">12:00 AM - Late Night</option>
+                    </select>
+                  </div>
+                  <div class="input-label">Preferred Time</div>
+                </div>
+
+                <!-- Event Selection -->
+                <div class="form-group full-width">
+                  <div class="input-with-icon">
+                    <i class="fas fa-calendar-star"></i>
+                    <select id="bookingEvent" name="event" required>
+                      <option value="" disabled selected>Select Event</option>
+                      <option value="midnight-madness">
+                        Saturday - Midnight Madness
+                      </option>
+                      <option value="playhouse-monday">
+                        Monday - Playhouse Mondays
+                      </option>
+                      <option value="brews-blues">
+                        Wednesday - Brews & Blues
+                      </option>
+                      <option value="electric-thursday">
+                        Thursday - Electric Thursdays
+                      </option>
+                      <option value="neon-friday">Friday - Neon Fridays</option>
+                      <option value="sunset-sunday">
+                        Sunday - Sunset Sessions
+                      </option>
+                      <option value="private-event">Private Event/Party</option>
+                    </select>
+                  </div>
+                  <div class="input-label">Select Event</div>
+                </div>
+
+                <!-- Party Size -->
+                <div class="form-group">
+                  <div class="input-with-icon">
+                    <i class="fas fa-users"></i>
+                    <select id="bookingParty" name="party" required>
+                      <option value="" disabled selected>Party Size</option>
+                      <option value="1-2">1-2 Persons</option>
+                      <option value="3-4">3-4 Persons</option>
+                      <option value="5-6">5-6 Persons</option>
+                      <option value="7-8">7-8 Persons</option>
+                      <option value="9+">9+ Persons (Group)</option>
+                    </select>
+                  </div>
+                  <div class="input-label">Party Size</div>
+                </div>
+
+                <!-- Table Category -->
+                <div class="form-group">
+                  <div class="input-with-icon">
+                    <i class="fas fa-chair"></i>
+                    <select id="bookingCategory" name="category" required>
+                      <option value="" disabled selected>Table Category</option>
+                      <option value="vvip">VVIP - Premium Experience</option>
+                      <option value="vip">VIP - Elevated Service</option>
+                      <option value="regular">Regular - Standard Table</option>
+                      <option value="booth">Booth - Cozy Seating</option>
+                    </select>
+                  </div>
+                  <div class="input-label">Table Category</div>
+                </div>
+
+                <!-- Special Requests -->
+                <div class="form-group full-width">
+                  <div class="textarea-with-icon">
+                    <i class="fas fa-comment-dots"></i>
+                    <textarea
+                      id="bookingRequests"
+                      name="requests"
+                      placeholder="Any special requests, celebrations, or preferences..."
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <div class="input-label">Special Requests</div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group full-width">
+                  <button type="submit" class="submit-btn">
+                    <span class="btn-text">Book Now</span>
+                    <span class="btn-icon">
+                      <i class="fas fa-arrow-right"></i>
+                    </span>
+                    <div class="btn-shine"></div>
+                  </button>
+
+                  <div class="form-footer">
+                    <div class="privacy-note">
+                      <i class="fas fa-lock"></i>
+                      <span
+                        >Your information is secure and will only be used for
+                        your reservation.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <!-- Confirmation Modal -->
+            <div id="bookingConfirmation" class="confirmation-modal">
+              <div class="confirmation-content">
+                <div class="confirmation-icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+                <h3 class="confirmation-title">Reservation Confirmed!</h3>
+                <p class="confirmation-message">
+                  Thank you for booking with Zero Arena. We've sent a
+                  confirmation to your phone number. Please arrive 15 minutes
+                  before your reservation time.
+                </p>
+                <div class="confirmation-details">
+                  <div class="detail-item">
+                    <span class="detail-label">Reservation ID:</span>
+                    <span class="detail-value" id="confirmationId"
+                      >ZA-2024-001</span
+                    >
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Date & Time:</span>
+                    <span class="detail-value" id="confirmationDateTime"></span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Event:</span>
+                    <span class="detail-value" id="confirmationEvent"></span>
+                  </div>
+                </div>
+                <button class="confirmation-btn" onclick="closeConfirmation()">
+                  Close
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link ">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="#activities" class="nav-item nav-link">Activities</a>
-                        <a href="#gallery" class="nav-item nav-link">Gallery</a>
-                        <a href="#upcomming" class="nav-item nav-link">Events</a>
-                        <a href="#why" class="nav-item nav-link">Why Us</a>
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <a  href="#reserve" class="scroll-to-section btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Reservations</a>
-                </div>
-            </nav>
-
-            <!-- Carousel Start -->
-            <div class="carousel-header">
-                <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
-                        <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
-                        <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <img src="img/n4.jpg" class="img-fluid" alt="Image">
-                            <div class="carousel-caption">
-                                <div class="p-3" style="max-width: 900px;">
-                                    <h1 class="display-2  mb-4 wow fadeInLeft" data-wow-delay="0.4s" style="color: goldenrod;">2<span class="mb-5 fs-5" style="color: goldenrod;">nd</span> </h1>
-                                    <h1 class="display-2 text-capitalize wow fadeInRight" data-wow-delay="0.3s" style="color: goldenrod;">Anniversary </h1>
-                                    <p style="font-weight: bolder;">Celebrating 2YEARS of <span style="color: goldenrod;">ZeroNegativity</span></p>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/n1.jpg" class="img-fluid" alt="Image">
-                            <div class="carousel-caption">
-                                <div class="p-3 wow fadeInRight" data-wow-delay="0.3s" style="max-width: 900px;">
-                                    <h1 class="display-2  mb-4 wow fadeInLeft" data-wow-delay="0.3s" style="color: goldenrod;">2<span class="mb-5 fs-5" style="color: goldenrod;">nd</span> </h1>
-                                    <h1 class="display-2 text-capitalize wow fadeInRight" data-wow-delay="0.3s" style="color: goldenrod;">Anniversary </h1>
-                                    <p style="font-weight: bolder;">Celebrating 2YEARS of <span style="color: goldenrod;">ZeroNegativity</span></p>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/n2.jpg" class="img-fluid" alt="Image">
-                            <div class="carousel-caption">
-                                <div class="p-3" style="max-width: 900px;">
-                                    <h1 class="display-2  mb-4 owl fadeInRight" data-wow-delay="0.4s" style="color: goldenrod;">2<span class="mb-5 fs-5" style="color: goldenrod;">nd</span> </h1>
-                                    <h1 class="display-2 text-capitalize" style="color: goldenrod;">Anniversary </h1>
-                                    <p style="font-weight: bolder;">Celebrating 2YEARS of <span style="color: goldenrod;">ZeroNegativity</span></p>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon btn bg-primary" aria-hidden="false"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                        <span class="carousel-control-next-icon btn bg-primary" aria-hidden="false"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+              </div>
             </div>
-            <!-- Carousel End -->
+          </div>
         </div>
-        <!-- Navbar & Hero End -->
+      </div>
+    </section>
 
-        <!-- About Start -->
-        <section class="section" id="about"> 
-        <div class="container-fluid about py-5">
-            <div class="container py-5">
-                <div class="row g-5 align-items-justify">
-                    <div class="col-lg-5">
-                        <div class="h-100">
-                            <img src="img/a1.jpg" class="img-fluid w-100 h-100" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-7" style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(img/pub/sub.jpg); border-radius: 10px;">
-                        <h5 class="section-about-title pe-3">About Us</h5>
-                        <h1 class="mb-4"><span class="text-primary">ZeroNegativity</span></h1>
-                        <p class="mb-4" style="text-align: justify; color:black">Club Zero is the premier destination for nightlife 
-                            enthusiasts. Located in the heart of the city, we offer an unparalleled experience with top DJs, 
-                            live performances, and a vibrant atmosphere. Our state-of-the-art sound and lighting systems create 
-                            an immersive environment that keeps the energy high all night long. Whether you're looking to dance 
-                            the night away or enjoy a more intimate setting in our VIP lounge, Club Zero has something for everyone.
-                        <br>De Office Pub is a lively and welcoming outdoor lounge that combines the warmth of a casual pub with the 
-                        vibrant energy of a social hub. Known for its open-air setting and relaxed atmosphere, De Office Pub is a perfect gathering place for friends, colleagues, and music lovers to unwind after a long day or kick off the weekend in style. The venue offers a rich selection of drinks, delicious food, and captivating live performances, creating an ambiance that’s both refreshing and energizing.</p>
-                        <div class="row gy-2 gx-4 mb-4" style="color: black;">
-                            <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Exclusive Ambience</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Euphoric Atmosphere</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Premium Entertainment</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Diverse Music</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>TopNotch Security</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Culture &amp; Lifestyle</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="footer-content">
+        <div class="footer-logo">ZERO ARENA</div>
+        <p>Calabar's Premier Nightlife Destination</p>
+        <p>Celebrating 3 Years of Nightlife Excellence</p>
+
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
         </div>
-        </section>
-        <!-- About End -->
 
-
-        <!-- Services Start -->
-        <section class="section" id="activities"> 
-        <div class="container-fluid bg-light service py-5">
-            <div class="container py-5">
-                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-                    <h5 class="section-title px-3 wow fadeInDown" data-wow-delay="0.4s">ZeroNegative</h5>
-                    <h1 class="mb-0 wow fadeInUp" data-wow-delay="0.3s">Activities</h1>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-6">
-                        <div class="row g-4">
-                            <div class="col-12">
-                                <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
-                                    <div class="service-content text-end wow fadeInRight" data-wow-delay="0.3s">
-                                        <h5 class="mb-4 text-primary">Midnight madness</h5>
-                                        <p class="mb-0">Join us every Saturday for Midnight Madness, where the music is louder, the lights are brighter, and the party doesn't stop.
-                                        </p>
-                                    </div>
-                                    <div class="service-icon p-4">
-                                        <i class="fa fa-music fa-4x text-primary"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="service-content-inner d-flex align-items-center  bg-white border border-primary rounded p-4 pe-0">
-                                    <div class="service-content text-end wow fadeInDown" data-wow-delay="0.5s">
-                                        <h5 class="mb-4 text-primary">Playhouse Mondays</h5>
-                                        <p class="mb-0">Join DJ DTUNEZ & DJ STARZY for a Premium exclusive monday night experience, jumpstarting and energizing your week to only positivity.
-                                        </p>
-                                    </div>
-                                    <div class="service-icon p-4">
-                                        <i class="fa fa-play fa-4x text-primary"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
-                                    <div class="service-content text-end wow fadeInLeft" data-wow-delay="0.6s">
-                                        <h5 class="mb-4 text-primary">Brews &map; Blues</h5>
-                                        <p class="mb-0">Midweek blues? We've got the cure. Come to Office Pub every Wednesday for Blues & Brews. Enjoy live blues performances while savoring a selection of craft beers and classic pub fare.
-                                        </p>
-                                    </div>
-                                    <div class="service-icon p-4">
-                                        <i class="fas fa-guitar fa-4x text-primary"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="row g-4">
-                            <div class="col-12">
-                                <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
-                                    <div class="service-icon p-4">
-                                        <i class="fa fa-bolt fa-4x text-primary"></i>
-                                    </div>
-                                    <div class="service-content wow fadeInDown" data-wow-delay="0.3s">
-                                        <h5 class="mb-4 text-primary">Neon fridays</h5>
-                                        <p class="mb-0">Dive into a vibrant experience with neon decorations, UV lights, and energetic music from top DJs.get ready for a dazzling night of dance, drinks, & unforgettable memories.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
-                                    <div class="service-icon p-4">
-                                        <i class="fa fa-plug fa-4x text-primary"></i>
-                                    </div>
-                                    <div class="service-content wow fadeInUp" data-wow-delay="0.4s">
-                                        <h5 class="mb-4 text-primary">Electric Thursdays</h5>
-                                        <p class="mb-0">Kickstart your weekend early with Electric Thursdays at Club Zero. Enjoy electrifying music, drink specials, and an unbeatable atmosphere to get you ready for the weekend.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
-                                    <div class="service-icon p-4">
-                                        <i class="fa fa-moon fa-4x text-primary"></i>
-                                    </div>
-                                    <div class="service-content wow fadeInLeft" data-wow-delay="0.6s">
-                                        <h5 class="mb-4 text-primary">Sunset Sundays</h5>
-                                        <p class="mb-0">Cap off your weekend with Sunday Sunset Sessions at Office Pub. Enjoy live bands playing chill and relaxing music as the sun sets, creating the perfect backdrop for a serene evening.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="contact-info">
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 123 Club Street, Calabar,
+            Nigeria
+          </p>
+          <p><i class="fas fa-phone"></i> +234 810 123 4567</p>
+          <p><i class="fas fa-envelope"></i> info@zeroarena.com</p>
         </div>
-        </section>
-        <!-- Services End -->
 
-        <!-- Destination Start -->
-        <section class="section" id="gallery"> 
-        <div class="container-fluid destination py-5">
-            <div class="container py-5">
-                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-                    <h5 class="section-title px-3 wow fadeInLeft" data-wow-delay="0.2s">ZeroNegative</h5>
-                    <h1 class="mb-0 wow fadeInDown" data-wow-delay="0.2s">The ZeroNegative Lifestyle</h1>
-                </div>
-                <div class="tab-class text-center">
-                    <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
-                        <li class="nav-item">
-                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
-                                <span class="text-dark wow fadeInUp" data-wow-delay="0.4s" style="width: 150px;">All</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-2">
-                                <span class="text-white wow fadeInDown" data-wow-delay="0.5s" style="width: 150px;">ClubZero</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-3">
-                                <span class="text-white wow fadeInLeft" data-wow-delay="0.3s" style="width: 150px;">De OffecePub</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-4">
-                                <span class="text-white wow fadeInRight" data-wow-delay="0.4s" style="width: 150px;">P.H Mondays</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row g-4">
-                                <div class="col-xl-8">
-                                    <div class="row g-4">
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100 wow fadeInDown" data-wow-delay="0.5s" src="img/pub/des1.jpg" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    <h4 class="text-white mb-2 mt-3">Clubzero</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/pub/des1.jpg" data-lightbox="destination-1"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100 wow fadeInUp" data-wow-delay="0.6s" src="img/pub/des2.jpg" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3"></a>
-                                                    <h4 class="text-white mb-2 mt-3">Clubzero</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/pub/des2.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100 wow fadeInDown" data-wow-delay="0.s" src="img/pub/des44.jpg" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3"></a>
-                                                    <h4 class="text-white mb-2 mt-3">Clubzero</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/pub/des44.jpg" data-lightbox="destination-7"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100 wow fadeInUp" data-wow-delay="0.4s" src="img/pub/des4.jpg" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3"></a>
-                                                    <h4 class="text-white mb-2 mt-3">ClubZero</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/pub/des4.jpg" data-lightbox="destination-8"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4">
-                                    <div class="destination-img h-100">
-                                        <img class="img-fluid rounded w-100 h-100 wow fadeInLeft" data-wow-delay="0.5s" src="img/pub/des8.jpg" style="object-fit: cover; min-height: 300px;" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3"></a>
-                                            <h4 class="text-white mb-2 mt-3">ClubZero</>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/pub/des8.jpg" data-lightbox="destination-4"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100 wow fadeInRight" data-wow-delay="0.5s" src="img/pub/des5.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3"></a>
-                                            <h4 class="text-white mb-2 mt-3">ClubZero</>
-                                        </div>
-                                        <div class="search-icon">2
-                                            <a href="img/pub/des5.jpg" data-lightbox="destination-4"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100 wow fadeInDown" data-wow-delay="0.6s" src="img/pub/des6.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3"></a>
-                                            <h4 class="text-white mb-2 mt-3">ClubZero</>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/pub/des6.jpg" data-lightbox="destination-5"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.4s" src="img/pub/des77.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3"></a>
-                                            <h4 class="text-white mb-2 mt-3">ClubZero</>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/pub/des77.jpg" data-lightbox="destination-6"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-2" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-xl-8">
-                                    <div class="row g-4">
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100" src="img/pub/des1.jpg" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    
-                                                    <h4 class="text-white mb-2 mt-3">Clubzero</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/pub/des1.jpg" data-lightbox="destination-1"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100" src="img/pub/des2.jpg" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    
-                                                    <h4 class="text-white mb-2 mt-3">Clubzero</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/pub/des2.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100" src="img/pub/des44.jpg" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    
-                                                    <h4 class="text-white mb-2 mt-3">Clubzero</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/pub/des44.jpg" data-lightbox="destination-7"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100" src="img/pub/des4.jpg" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    
-                                                    <h4 class="text-white mb-2 mt-3">ClubZero</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/pub/des4.jpg" data-lightbox="destination-8"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4">
-                                    <div class="destination-img h-100">
-                                        <img class="img-fluid rounded w-100 h-100" src="img/pub/des8.jpg" style="object-fit: cover; min-height: 300px;" alt="">
-                                        <div class="destination-overlay p-4">
-                                            
-                                            <h4 class="text-white mb-2 mt-3">ClubZero</>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/pub/des8.jpg" data-lightbox="destination-4"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="img/pub/des5.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            
-                                            <h4 class="text-white mb-2 mt-3">ClubZero</>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/pub/des5.jpg" data-lightbox="destination-4"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="img/pub/des6.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            
-                                            <h4 class="text-white mb-2 mt-3">ClubZero</>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/pub/des6.jpg" data-lightbox="destination-5"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="img/pub/des77.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            
-                                            <h4 class="text-white mb-2 mt-3">ClubZero</>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/pub/des77.jpg" data-lightbox="destination-6"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-3" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-xl-8">
-                                    <div class="row g-4">
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100" src="img/off/pub.jpg" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    
-                                                    <h4 class="text-white mb-2 mt-3">De Office Pub</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/off/pub.jpg" data-lightbox="destination-1"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100" src="img/off/pub1.jpg" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    
-                                                    <h4 class="text-white mb-2 mt-3">De Office Pub</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/off/pub1.jpg" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100" src="img/off/pub2.jpg" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    
-                                                    <h4 class="text-white mb-2 mt-3">De Office Pub</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/off/pub2.jpg" data-lightbox="destination-7"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100" src="img/off/pub3.jpg" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    
-                                                    <h4 class="text-white mb-2 mt-3">De Office Pub</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/off/pub3.jpg" data-lightbox="destination-8"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4">
-                                    <div class="destination-img h-100">
-                                        <img class="img-fluid rounded w-100 h-100" src="img/off/pub4.jpg" style="object-fit: cover; min-height: 300px;" alt="">
-                                        <div class="destination-overlay p-4">
-                                            
-                                            <h4 class="text-white mb-2 mt-3">De Office Pub</>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/off/pub4.jpg" data-lightbox="destination-4"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="img/off/pub5.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            
-                                            <h4 class="text-white mb-2 mt-3">De Office Pub</>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/off/pub5.jpg" data-lightbox="destination-4"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="img/off/pub6.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            
-                                            <h4 class="text-white mb-2 mt-3">De Office Pub</>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/off/pub6.jpg" data-lightbox="destination-5"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="img/off/pub9.jpg" alt="">
-                                        <div class="destination-overlay p-4">
-                                            
-                                            <h4 class="text-white mb-2 mt-3">De Office Pub</>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/off/pub9.jpg" data-lightbox="destination-6"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-4" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-xl-8">
-                                    <div class="row g-4">
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100" src="img/phm/ph5.JPG" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    
-                                                    <h4 class="text-white mb-2 mt-3">Playhouse Mondays</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/phm/ph5.JPG" data-lightbox="destination-1"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100" src="img/phm/theo.JPG" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    
-                                                    <h4 class="text-white mb-2 mt-3">Playhouse Mondays</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/phm/theo.JPG" data-lightbox="destination-2"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100" src="img/phm/ph3.JPG" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    
-                                                    <h4 class="text-white mb-2 mt-3">Playhouse Mondays</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/phm/ph3.JPG" data-lightbox="destination-7"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="destination-img">
-                                                <img class="img-fluid rounded w-100" src="img/phm/ph4.JPG" alt="">
-                                                <div class="destination-overlay p-4">
-                                                    
-                                                    <h4 class="text-white mb-2 mt-3">Playhouse Mondays</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/phm/ph4.JPG" data-lightbox="destination-8"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4">
-                                    <div class="destination-img h-100">
-                                        <img class="img-fluid rounded w-100 h-100" src="img/phm/ph2.JPG" style="object-fit: cover; min-height: 300px;" alt="">
-                                        <div class="destination-overlay p-4">
-                                            
-                                            <h4 class="text-white mb-2 mt-3">Playhouse Mondays</>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/phm/ph2.JPG" data-lightbox="destination-4"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="img/phm/ph6.JPG" alt="">
-                                        <div class="destination-overlay p-4">
-                                            
-                                            <h4 class="text-white mb-2 mt-3">Playhouse Mondays</>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/phm/ph6.JPG" data-lightbox="destination-4"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="img/phm/ph7.JPG" alt="">
-                                        <div class="destination-overlay p-4">
-                                            
-                                            <h4 class="text-white mb-2 mt-3">Playhouse Mondays</>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/phm/ph7.JPG" data-lightbox="destination-5"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="destination-img">
-                                        <img class="img-fluid rounded w-100" src="img/phm/ph8.JPG" alt="">
-                                        <div class="destination-overlay p-4">
-                                            
-                                            <h4 class="text-white mb-2 mt-3">Playhouse Mondays</>
-                                        </div>
-                                        <div class="search-icon">
-                                            <a href="img/phm/ph8.JPG" data-lightbox="destination-6"><i class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="copyright">
+          &copy; 2023 Zero Arena. All Rights Reserved. | King of Calabar
+          Nightlife
         </div>
-        </section>
-        <!-- Destination End -->
+      </div>
+    </footer>
 
-        <!-- Explore Tour Start -->
-        <section class="section" id="upcomming"> 
-        <div class="container-fluid ExploreTour py-5">
-            <div class="container py-5">
-                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-                    <h5 class="section-title px-3">ZeroNegative</h5>
-                    <h1 class="mb-4"> Upcomming Events</h1>
-                    <p class="mb-0 text-white">Stay all inclusive with our upcomming events, parties &amp; Raves, Don't miss out on the ZeroNegativity
-                    </p>
-                </div>
-                <div class="tab-class text-center">
-                    <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
-                        <li class="nav-item">
-                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#NationalTab-1">
-                                <span class="text-dark" style="width: 250px;">CLUBZERO</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#InternationalTab-2">
-                                <span class="text-white" style="width: 250px;">DE OFFICE PUB</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="NationalTab-1" class="tab-pane fade show p-0 active">
-                            <div id="NationalTab-1" class="tab-pane fade show p-0">
-                                <div class="InternationalTour-carousel owl-carousel">
-                                    <div class="international-item">
-                                        <img src="img/fola.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                        <div class="international-content">
-                                            <div class="international-info">
-                                                <h5 class="text-white text-uppercase mb-2">VIP Experience with FOLA</h5>
-                                                <a href="#reserve" class="btn-hover text-white me-4"><i class="fas fa-map-marker-alt me-1"></i>10/10/2025</a>
-                                                <a href="#reserve" class="btn-hover text-white"><i class="fa fa-list ms-2"></i> <span>Book a table</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="international-item">
-                                        <img src="img/keed.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                        <div class="international-content">
-                                            <div class="international-info">
-                                                <h5 class="text-white text-uppercase mb-2">Hot Keed Live</h5>
-                                                <a href="#reserve" class="btn-hover text-white me-4"><i class="fas fa-map-marker-alt me-1"></i>09/05/2025</a>
-                                                <a href="#reserve" class="btn-hover text-white"><i class="fa fa-list ms-2"></i> <span>Book a table</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="InternationalTab-2" class="tab-pane fade show p-0">
-                            <div class="InternationalTour-carousel owl-carousel">
-                                <div class="international-item">
-                                    <img src="img/off/upup.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                    <div class="international-content">
-                                        <div class="international-info">
-                                            <h5 class="text-white text-uppercase mb-2">Upcomming</h5>
-                                            <a href="#reserve" class="btn-hover text-white me-4"><i class="fas fa-map-marker-alt me-1"></i>Date</a>
-                                            <a href="#reserve" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i> <span>Book a table</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="international-plus-icon">
-                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                                <div class="international-item">
-                                    <img src="img/off/upup1.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                    <div class="international-content">
-                                        <div class="international-info">
-                                            <h5 class="text-white text-uppercase mb-2">Upcomming</h5>
-                                            <a href="#" class="btn-hover text-white me-4"><i class="fas fa-map-marker-alt me-1"></i>Date</a>
-                                            <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i> <span>Book a table</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="international-plus-icon">
-                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                                <div class="international-item">
-                                    <img src="img/off/upup.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                    <div class="international-content">
-                                        <div class="international-info">
-                                            <h5 class="text-white text-uppercase mb-2">Upcomming</h5>
-                                            <a href="#" class="btn-hover text-white me-4"><i class="fas fa-map-marker-alt me-1"></i>Date</a>
-                                            <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i> <span>Book a table</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="international-plus-icon">
-                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                                <div class="international-item">
-                                    <img src="img/off/upup1.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                    <div class="international-content">
-                                        <div class="international-info">
-                                            <h5 class="text-white text-uppercase mb-2">Upcomming</h5>
-                                            <a href="#" class="btn-hover text-white me-4"><i class="fas fa-map-marker-alt me-1"></i>Date</a>
-                                            <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i> <span>Book a table</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="international-plus-icon">
-                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                                <div class="international-item">
-                                    <img src="img/off/upup.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                    <div class="international-content">
-                                        <div class="international-info">
-                                            <h5 class="text-white text-uppercase mb-2">Upcomming</h5>
-                                            <a href="#" class="btn-hover text-white me-4"><i class="fas fa-map-marker-alt me-1"></i>Date</a>
-                                            <a href="#" class="btn-hover text-white"><i class="fa fa-eye ms-2"></i> <span>Book a table</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="international-plus-icon">
-                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section>
-        <!-- Explore Tour Start -->
+    <script>
+      // Carousel functionality
+      const slides = document.querySelectorAll(".carousel-slide");
+      const dots = document.querySelectorAll(".dot");
+      let currentSlide = 0;
+      const slideInterval = 5000; // 5 seconds
 
-        <!-- Testimonial Start -->
-        <section class="section" id="why"> 
-        <div class="container-fluid testimonial py-5">
-            <div class="container py-5">
-                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-                    <h5 class="section-title px-3">ZeroNegative</h5>
-                    <h1 class="mb-0">Why Zero ???</h1>
-                </div>
-                <div class="testimonial-carousel owl-carousel">
-                    <div class="testimonial-item text-center rounded pb-4">
-                        <div class="testimonial-comment bg-light rounded p-4">
-                            <p class="text-center mb-5">Club Zero is more than just a club—it's a community built on positivity and shared energy. Embracing the slogan "Zero Negative Vibes and Lifestyle," the club fosters an environment where everyone can feel welcome, safe, and energized. 
-                                By cultivating an atmosphere of unity and positivity, Club Zero ensures that each guest leaves with lasting memories and a renewed spirit.
-                            </p>
-                        </div>
-                        <div class="testimonial-img p-1">
-                            <img src="img/pub/logoo.png" class="img-fluid rounded-circle" alt="Image">
-                        </div>
-                        <div style="margin-top: -35px;">
-                            <h5 class="mb-0">ClubZero</h5>
-                            <p class="mb-0">ZeroNegative</p>
-                            <div class="d-flex justify-content-center">
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item text-center rounded pb-4">
-                        <div class="testimonial-comment bg-light rounded p-4">
-                            <p class="text-center mb-5">De Office Pub provides the perfect balance between a laid-back environment and lively entertainment, ideal for those looking to unwind with friends or enjoy an outdoor band. With spacious seating, a range of craft drinks, 
-                                and an inviting open-air setup, De Office Pub captures the essence of a cozy yet dynamic social experience.
-                            </p>
-                        </div>
-                        <div class="testimonial-img p-1">
-                            <img src="img/pub/logoo3.png" class="img-fluid rounded-circle" alt="Image">
-                        </div>
-                        <div style="margin-top: -35px;">
-                            <h5 class="mb-0">De Offece Pub</h5>
-                            <p class="mb-0">ZeroNegative</p>
-                            <div class="d-flex justify-content-center">
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item text-center rounded pb-4">
-                        <div class="testimonial-comment bg-light rounded p-4">
-                            <p class="text-center mb-5">Club Zero stands out for its vibrant and electric atmosphere, designed for those who seek a memorable nightlife experience. 
-                                From cutting-edge sound systems to captivating lighting, Club Zero creates the ultimate ambiance, allowing guests to fully immerse themselves in the beats and rhythm of the night. Every weekend promises a unique, exhilarating experience, making it the go-to destination for nightlife enthusiasts.
-                            </p>
-                        </div>
-                        <div class="testimonial-img p-1">
-                            <img src="img/pub/logoo2.jpg" class="img-fluid rounded-circle" alt="Image">
-                        </div>
-                        <div style="margin-top: -35px;">
-                            <h5 class="mb-0">ClubZero</h5>
-                            <p class="mb-0">ZeroNegative</p>
-                            <div class="d-flex justify-content-center">
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item text-center rounded pb-4">
-                        <div class="testimonial-comment bg-light rounded p-4">
-                            <p class="text-center mb-5">As a venue dedicated to supporting and showcasing local talent, De Office Pub regularly hosts live performances that keep guests entertained and connected to the local music scene. 
-                                This commitment to live music and entertainment brings a fresh, authentic vibe to every visit, making it an exciting spot for discovering new artists and enjoying classic tunes.
-                            </p>
-                        </div>
-                        <div class="testimonial-img p-1">
-                            <img src="img/pub/logoo3.png" class="img-fluid rounded-circle" alt="Image">
-                        </div>
-                        <div style="margin-top: -35px;">
-                            <h5 class="mb-0">De Office Pub</h5>
-                            <p class="mb-0">ZeroNegative</p>
-                            <div class="d-flex justify-content-center">
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section>
-        <!-- Testimonial End -->
+      function showSlide(n) {
+        // Hide all slides
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
 
+        // Remove active class from all dots
+        dots.forEach((dot) => {
+          dot.classList.remove("active");
+        });
 
-        <!-- Tour Booking Start -->
-         <section class="section" id="reserve">
-        <div class="container-fluid booking py-5">
-            <div class="container py-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6">
-                        <h5 class="section-booking-title pe-3">Bookings</h5>
-                        <h1 class="text-white mb-4">Book a table </h1>
-                        <p class="text-white mb-4">
-                        </p>
-                        <p class="text-white mb-4">
-                        </p>
-                    </div>
-                    <div class="col-lg-6">
-                        <h1 class="text-white mb-3">Book A Table Deals</h1>
-                        <p class="text-white mb-4">Get <span class="text-warning">20% Off</span> by bookings two weeks ahead of event date</p>
-                        <form  id="contactForm" onsubmit="sendMail(event)">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control bg-white border-0" id="name" name="name" placeholder="Your Name" required>
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="phone" class="form-control bg-white border-0" id="email" name="email" placeholder="Phone number" required>
-                                        <label for="email">Phone Number</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating date" id="date3" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-white border-0" id="datetime" name="date" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
-                                        <label for="datetime">Date Of Reservation</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <select class="form-select bg-white border-0" id="select1" name="event" required>
-                                            <option value="Fola">VIP EXP with Fola</option>
-                                            <option value="2">Event 2</option>
-                                            <option value="3">Event 3</option>
-                                        </select>
-                                        <label for="select1">Event</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <select class="form-select bg-white border-0" id="SelectPerson" name="persons">
-                                            <option value="1">Persons 1</option>
-                                            <option value="2">Persons 2</option>
-                                            <option value="3">Multiple</option>
-                                        </select>
-                                        <label for="SelectPerson">No. of Persons</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating" aria-required="true">
-                                        <select class="form-select bg-white border-0" id="CategoriesSelect" name="category" required>
-                                            <option value="1">Table Category</option>
-                                            <option value="VVIP">VVIP</option>
-                                            <option value="VIP">VIP</option>
-                                            <option value="Regular">Regular</option>
-                                        </select>
-                                        <label for="CategoriesSelect">Categories</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control bg-white border-0" placeholder="Special Request" id="message" name="request" style="height: 100px"></textarea>
-                                        <label for="message">Special Request</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary text-white w-100 py-3" type="submit">Book Now</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section>
-        <!-- Tour Booking End -->
+        // Show the selected slide
+        currentSlide = (n + slides.length) % slides.length;
+        slides[currentSlide].classList.add("active");
+        dots[currentSlide].classList.add("active");
+      }
 
-        <!-- Subscribe Start -->
-        <div class="container-fluid subscribe py-5">
-            <div class="container text-center py-5">
-                <div class="mx-auto text-center" style="max-width: 900px;">
-                    <h5 class="subscribe-title px-3">ZeroVIP</h5>
-                    <h1 class="text-white mb-4">Join The ZeroNegative Family</h1>
-                    <p class="text-white mb-5">Get exclusive invites to our VIP parties and get table deals on all upcomming events by joining the ZeroNegative family 
-                    </p>
-                    <div class="position-relative mx-auto">
-                        <input class="form-control border-primary rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="submit" class="btn btn-primary rounded-pill position-absolute top-1 end-0 py-2 px-4 mt-2 me-2">Signup</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Subscribe End -->
+      // Auto slide
+      function nextSlide() {
+        showSlide(currentSlide + 1);
+      }
 
-        <!-- Footer Start -->
-        <section class="section" id="contact"> 
-        <div class="container-fluid footer py-5">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white">Zero Arena</h4>
-                            <a href=""><i class="fas fa-home me-2"></i>128, Nndidem Usang Iso Road Calabar.</a>
-                            <a href=""><i class="fas fa-envelope me-2"></i> info@zeroarena.com.ng</a>
-                            <a href=""><i class="fas fa-phone me-2"></i>0701 640 0210</a>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-share fa-2x text-white me-2"></i>
-                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section>
-        <!-- Footer End -->
-        
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright text-body py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-end mb-md-0">
-                        <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">zeroarena.com.ng</a>, All right reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-start">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Powered By <a class="text-white" href="https://bellahteck.com">BellaTECH NG.</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Copyright End -->
+      // Initialize auto slide
+      let slideTimer = setInterval(nextSlide, slideInterval);
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+      // Dot click event
+      dots.forEach((dot) => {
+        dot.addEventListener("click", function () {
+          const slideIndex = parseInt(this.getAttribute("data-slide"));
+          showSlide(slideIndex);
+          // Reset timer when manually changing slides
+          clearInterval(slideTimer);
+          slideTimer = setInterval(nextSlide, slideInterval);
+        });
+      });
 
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        
+      // Mobile navigation toggle
+      const mobileToggle = document.querySelector(".mobile-toggle");
+      const navLinks = document.querySelector(".nav-links");
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+      mobileToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        mobileToggle.innerHTML = navLinks.classList.contains("active")
+          ? '<i class="fas fa-times"></i>'
+          : '<i class="fas fa-bars"></i>';
+      });
 
-        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      // Close mobile menu when clicking a link
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+          mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        });
+      });
 
-        <script>
-       // Initialize EmailJS with your User ID
-       (function() {
-           emailjs.init("S-xQwmEV2I8oavOc1");
-       })();
-   
-       // Function to handle form submission
-       function sendMail(event) {
-           event.preventDefault();  // Prevent default form submission
-   
-           // Use EmailJS to send form data
-           emailjs.sendForm('service_6e8nzp3', 'template_fraswac', '#contactForm')
-           .then((result) => {
-               alert("Reservation successful!");
-               document.getElementById("contactForm").reset();  // Optional: reset form after submission
-           }, (error) => {
-               alert("Failed to send form: " + error.text);
-           });
-       }
-     </script>
-     
-    </body>
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
 
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Add scroll effect to navbar
+      window.addEventListener("scroll", () => {
+        const nav = document.querySelector("nav");
+        if (window.scrollY > 100) {
+          nav.style.backgroundColor = "rgba(10, 10, 26, 0.95)";
+          nav.style.padding = "1rem 5%";
+        } else {
+          nav.style.backgroundColor = "rgba(10, 10, 26, 0.7)";
+          nav.style.padding = "1.5rem 5%";
+        }
+      });
+    </script>
+
+    <script>
+      // Add animation on scroll
+      document.addEventListener("DOMContentLoaded", function () {
+        const activityCards = document.querySelectorAll(".activity-card");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry, index) => {
+              if (entry.isIntersecting) {
+                // Stagger the animations
+                setTimeout(() => {
+                  entry.target.style.opacity = "1";
+                  entry.target.style.transform = "translateY(0)";
+                }, index * 100);
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px",
+          }
+        );
+
+        activityCards.forEach((card) => {
+          card.style.opacity = "0";
+          card.style.transform = "translateY(30px)";
+          card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+          observer.observe(card);
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Tab switching functionality
+        const tabs = document.querySelectorAll(".tab");
+        const tabPanes = document.querySelectorAll(".tab-pane");
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", function () {
+            const tabId = this.getAttribute("data-tab");
+
+            // Update active tab
+            tabs.forEach((t) => t.classList.remove("active"));
+            this.classList.add("active");
+
+            // Show active pane
+            tabPanes.forEach((pane) => {
+              pane.classList.remove("active");
+              if (pane.id === tabId) {
+                pane.classList.add("active");
+              }
+            });
+
+            // Reset animations for the new tab
+            resetTickerAnimations();
+          });
+        });
+
+        // Ticker control variables
+        let tickerPaused = false;
+        let tickerSpeed = 1;
+        let currentModalImages = [];
+        let currentModalIndex = 0;
+
+        // Pause/Resume functionality
+        const pauseBtn = document.getElementById("pauseTicker");
+        const resumeBtn = document.getElementById("resumeTicker");
+
+        pauseBtn.addEventListener("click", function () {
+          pauseAllTickers();
+          tickerPaused = true;
+          this.style.opacity = "0.5";
+          resumeBtn.style.opacity = "1";
+        });
+
+        resumeBtn.addEventListener("click", function () {
+          resumeAllTickers();
+          tickerPaused = false;
+          this.style.opacity = "0.5";
+          pauseBtn.style.opacity = "1";
+        });
+
+        // Speed control
+        const speedBtns = document.querySelectorAll(".speed-btn");
+        speedBtns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            speedBtns.forEach((b) => b.classList.remove("active"));
+            this.classList.add("active");
+            tickerSpeed = parseFloat(this.getAttribute("data-speed"));
+            updateTickerSpeed();
+          });
+        });
+
+        // Ticker control functions
+        function pauseAllTickers() {
+          const tickerRows = document.querySelectorAll(".ticker-row");
+          tickerRows.forEach((row) => {
+            row.classList.add("paused");
+            const track = row.querySelector(".ticker-track");
+            track.style.animationPlayState = "paused";
+          });
+        }
+
+        function resumeAllTickers() {
+          const tickerRows = document.querySelectorAll(".ticker-row");
+          tickerRows.forEach((row) => {
+            row.classList.remove("paused");
+            const track = row.querySelector(".ticker-track");
+            track.style.animationPlayState = "running";
+          });
+        }
+
+        function updateTickerSpeed() {
+          const tickerTracks = document.querySelectorAll(".ticker-track");
+          tickerTracks.forEach((track) => {
+            const currentAnimation = getComputedStyle(track).animationName;
+            const duration = 40 / tickerSpeed;
+
+            if (currentAnimation === "tickerLeft") {
+              track.style.animation = `tickerLeft ${duration}s linear infinite`;
+            } else if (currentAnimation === "tickerRight") {
+              track.style.animation = `tickerRight ${duration}s linear infinite`;
+            }
+          });
+        }
+
+        function resetTickerAnimations() {
+          const activePane = document.querySelector(".tab-pane.active");
+          const topTrack = activePane.querySelector(".top-row .ticker-track");
+          const bottomTrack = activePane.querySelector(
+            ".bottom-row .ticker-track"
+          );
+
+          // Reset animations
+          topTrack.style.animation = "none";
+          bottomTrack.style.animation = "none";
+
+          setTimeout(() => {
+            const duration = 40 / tickerSpeed;
+            topTrack.style.animation = `tickerLeft ${duration}s linear infinite`;
+            bottomTrack.style.animation = `tickerRight ${duration}s linear infinite`;
+
+            if (tickerPaused) {
+              topTrack.style.animationPlayState = "paused";
+              bottomTrack.style.animationPlayState = "paused";
+            }
+          }, 50);
+        }
+
+        // Hover pause functionality
+        const tickerRows = document.querySelectorAll(".ticker-row");
+        tickerRows.forEach((row) => {
+          row.addEventListener("mouseenter", function () {
+            if (!tickerPaused) {
+              this.classList.add("paused");
+              const track = this.querySelector(".ticker-track");
+              track.style.animationPlayState = "paused";
+            }
+          });
+
+          row.addEventListener("mouseleave", function () {
+            if (!tickerPaused) {
+              this.classList.remove("paused");
+              const track = this.querySelector(".ticker-track");
+              track.style.animationPlayState = "running";
+            }
+          });
+        });
+
+        // Modal functionality
+        const modal = document.getElementById("imageModal");
+        const modalImage = document.getElementById("modalImage");
+        const modalTitle = document.getElementById("modalTitle");
+        const modalDescription = document.getElementById("modalDescription");
+        const closeModal = document.querySelector(".close-modal");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        // Collect all images for modal
+        const allImages = document.querySelectorAll(".ticker-item img");
+
+        allImages.forEach((img, index) => {
+          img.addEventListener("click", function () {
+            const activeTab = document.querySelector(".tab.active");
+            const tabId = activeTab.getAttribute("data-tab");
+
+            // Get all images from current tab
+            currentModalImages = [];
+            const currentPane = document.getElementById(tabId);
+            const paneImages = currentPane.querySelectorAll(".ticker-item img");
+
+            paneImages.forEach((paneImg, paneIndex) => {
+              currentModalImages.push({
+                src: paneImg.src,
+                title: paneImg.alt,
+                description:
+                  paneImg.nextElementSibling.querySelector("span").textContent,
+              });
+
+              // Find the clicked image index
+              if (paneImg.src === this.src) {
+                currentModalIndex = paneIndex % 5; // Because of duplicates
+              }
+            });
+
+            // Open modal with clicked image
+            openModal(currentModalIndex);
+          });
+        });
+
+        function openModal(index) {
+          if (currentModalImages.length === 0) return;
+
+          currentModalIndex = index;
+          const image = currentModalImages[currentModalIndex];
+
+          modalImage.src = image.src;
+          modalTitle.textContent = image.title;
+          modalDescription.textContent = image.description;
+
+          modal.style.display = "flex";
+          document.body.style.overflow = "hidden";
+        }
+
+        function closeModalFunc() {
+          modal.style.display = "none";
+          document.body.style.overflow = "auto";
+        }
+
+        function nextImage() {
+          currentModalIndex =
+            (currentModalIndex + 1) % currentModalImages.length;
+          const image = currentModalImages[currentModalIndex];
+          modalImage.src = image.src;
+          modalTitle.textContent = image.title;
+          modalDescription.textContent = image.description;
+        }
+
+        function prevImage() {
+          currentModalIndex =
+            (currentModalIndex - 1 + currentModalImages.length) %
+            currentModalImages.length;
+          const image = currentModalImages[currentModalIndex];
+          modalImage.src = image.src;
+          modalTitle.textContent = image.title;
+          modalDescription.textContent = image.description;
+        }
+
+        // Event listeners for modal controls
+        closeModal.addEventListener("click", closeModalFunc);
+        prevBtn.addEventListener("click", prevImage);
+        nextBtn.addEventListener("click", nextImage);
+
+        // Close modal when clicking outside
+        modal.addEventListener("click", function (e) {
+          if (e.target === modal) {
+            closeModalFunc();
+          }
+        });
+
+        // Keyboard navigation
+        document.addEventListener("keydown", function (e) {
+          if (modal.style.display === "flex") {
+            if (e.key === "Escape") {
+              closeModalFunc();
+            } else if (e.key === "ArrowRight") {
+              nextImage();
+            } else if (e.key === "ArrowLeft") {
+              prevImage();
+            }
+          }
+        });
+
+        // Initialize ticker animations
+        resetTickerAnimations();
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const bookingForm = document.getElementById("bookingForm");
+        const confirmationModal = document.getElementById(
+          "bookingConfirmation"
+        );
+
+        // Generate random reservation ID
+        function generateReservationId() {
+          const prefix = "ZA";
+          const year = new Date().getFullYear();
+          const randomNum = Math.floor(Math.random() * 1000)
+            .toString()
+            .padStart(3, "0");
+          return `${prefix}-${year}-${randomNum}`;
+        }
+
+        // Format date for display
+        function formatDate(dateString) {
+          const date = new Date(dateString);
+          return date.toLocaleDateString("en-US", {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          });
+        }
+
+        // Handle form submission
+        bookingForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Get form data
+          const formData = new FormData(bookingForm);
+          const bookingData = Object.fromEntries(formData);
+
+          // Validate data
+          if (
+            !bookingData.name ||
+            !bookingData.phone ||
+            !bookingData.date ||
+            !bookingData.time ||
+            !bookingData.event
+          ) {
+            alert("Please fill in all required fields");
+            return;
+          }
+
+          // Generate confirmation details
+          const reservationId = generateReservationId();
+          const dateTime = `${formatDate(bookingData.date)} at ${
+            bookingData.time
+          }`;
+
+          // Update confirmation modal
+          document.getElementById("confirmationId").textContent = reservationId;
+          document.getElementById("confirmationDateTime").textContent =
+            dateTime;
+          document.getElementById("confirmationEvent").textContent =
+            document.querySelector(
+              `#bookingEvent option[value="${bookingData.event}"]`
+            ).textContent;
+
+          // Show confirmation modal
+          confirmationModal.style.display = "flex";
+
+          // Reset form
+          bookingForm.reset();
+
+          // Simulate sending data to server
+          console.log("Booking submitted:", bookingData);
+
+          // In a real application, you would send this data to your server
+          // fetch('/api/bookings', {
+          //     method: 'POST',
+          //     headers: {'Content-Type': 'application/json'},
+          //     body: JSON.stringify(bookingData)
+          // })
+          // .then(response => response.json())
+          // .then(data => {
+          //     // Handle successful booking
+          //     showConfirmation(data.reservationId);
+          // })
+          // .catch(error => {
+          //     console.error('Error:', error);
+          //     alert('There was an error submitting your booking. Please try again.');
+          // });
+        });
+
+        // Close confirmation modal
+        window.closeConfirmation = function () {
+          confirmationModal.style.display = "none";
+        };
+
+        // Close modal when clicking outside
+        confirmationModal.addEventListener("click", function (e) {
+          if (e.target === confirmationModal) {
+            closeConfirmation();
+          }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener("keydown", function (e) {
+          if (
+            e.key === "Escape" &&
+            confirmationModal.style.display === "flex"
+          ) {
+            closeConfirmation();
+          }
+        });
+
+        // Input validation
+        const phoneInput = document.getElementById("bookingPhone");
+        phoneInput.addEventListener("input", function (e) {
+          let value = e.target.value.replace(/\D/g, "");
+          if (value.length > 11) value = value.slice(0, 11);
+
+          if (value.length > 0) {
+            if (value.startsWith("0")) {
+              value = "+234" + value.slice(1);
+            } else if (value.length === 10) {
+              value = "+234" + value;
+            } else if (value.length === 11 && value.startsWith("234")) {
+              value = "+" + value;
+            }
+          }
+
+          e.target.value = value;
+        });
+
+        // Date validation - prevent past dates
+        const dateInput = document.getElementById("bookingDate");
+        const today = new Date().toISOString().split("T")[0];
+        dateInput.min = today;
+
+        // Add animation to form inputs on focus
+        const formInputs = document.querySelectorAll("input, select, textarea");
+        formInputs.forEach((input) => {
+          input.addEventListener("focus", function () {
+            this.parentElement.parentElement.classList.add("focused");
+          });
+
+          input.addEventListener("blur", function () {
+            this.parentElement.parentElement.classList.remove("focused");
+          });
+        });
+
+        // Initialize with sample data for demo
+        window.demoBooking = function () {
+          document.getElementById("bookingName").value = "Alex Johnson";
+          document.getElementById("bookingPhone").value = "+2348101234567";
+          document.getElementById("bookingDate").value = "2024-12-15";
+          document.getElementById("bookingTime").value = "22:00";
+          document.getElementById("bookingEvent").value = "midnight-madness";
+          document.getElementById("bookingParty").value = "5-6";
+          document.getElementById("bookingCategory").value = "vip";
+          document.getElementById("bookingRequests").value =
+            "Celebrating a birthday - please have a bottle of champagne ready!";
+        };
+      });
+    </script>
+  </body>
 </html>
