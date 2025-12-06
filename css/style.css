@@ -1260,6 +1260,7 @@ section {
   background-repeat: no-repeat;
   background-position: right 1rem center;
   background-size: 16px;
+  color: var(--primary);
 }
 
 .textarea-with-icon {

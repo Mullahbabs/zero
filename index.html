@@ -1124,6 +1124,52 @@
                       <span>PRO EQUIPMENT</span>
                     </div>
                   </div>
+                  <!-- Duplicate for loop -->
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Vibe"
+                    />
+                    <div class="image-overlay">
+                      <span>POSITIVE VIBES</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1469594292607-7bd90f8d3ba4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Energy"
+                    />
+                    <div class="image-overlay">
+                      <span>ENERGETIC START</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1526470498-9ae73c665de8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Sound"
+                    />
+                    <div class="image-overlay">
+                      <span>CRISP SOUND</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Mixing"
+                    />
+                    <div class="image-overlay">
+                      <span>LIVE MIXING</span>
+                    </div>
+                  </div>
+                  <div class="ticker-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      alt="Playhouse Monday Equipment"
+                    />
+                    <div class="image-overlay">
+                      <span>PRO EQUIPMENT</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1136,10 +1182,10 @@
           style="text-align: center; margin-top: 3rem"
         >
           <button class="gallery-control-btn" id="pauseTicker">
-            <i class="fas fa-pause"></i> Pause Ticker
+            <i class="fas fa-pause"></i> Pause Gallery Slide
           </button>
           <button class="gallery-control-btn" id="resumeTicker">
-            <i class="fas fa-play"></i> Resume Ticker
+            <i class="fas fa-play"></i> Resume Gallery Slide
           </button>
           <div
             class="speed-control"
@@ -1296,14 +1342,16 @@
                   <div class="input-with-icon">
                     <i class="fas fa-clock"></i>
                     <select id="bookingTime" name="time" required>
-                      <option value="" disabled selected>Select Time</option>
-                      <option value="18:00">6:00 PM - Early Entry</option>
-                      <option value="20:00">8:00 PM - Prime Time</option>
-                      <option value="22:00">10:00 PM - Peak Hours</option>
-                      <option value="00:00">12:00 AM - Late Night</option>
+                      <option value="" disabled selected>
+                        Time Of Arrival
+                      </option>
+                      <option value="18:00">10:00 PM - Early Entry</option>
+                      <option value="20:00">11:00 PM - Prime Time</option>
+                      <option value="22:00">12:00 AM - Peak Hours</option>
+                      <option value="00:00">01:00 AM - Late Night</option>
                     </select>
                   </div>
-                  <div class="input-label">Preferred Time</div>
+                  <div class="input-label">Arrival Time</div>
                 </div>
 
                 <!-- Event Selection -->
@@ -1457,8 +1505,8 @@
 
         <div class="contact-info">
           <p>
-            <i class="fas fa-map-marker-alt"></i> 123 Club Street, Calabar,
-            Nigeria
+            <i class="fas fa-map-marker-alt"></i> 123 Nndidem Usang Iso Road
+            Calabar, Nigeria
           </p>
           <p><i class="fas fa-phone"></i> +234 810 123 4567</p>
           <p><i class="fas fa-envelope"></i> info@zeroarena.com</p>
@@ -1842,12 +1890,20 @@
       });
     </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
     <script>
+      // Initialize EmailJS with your public key
+      emailjs.init("S-xQwmEV2I8oavOc1"); // Replace with your actual public key
+
       document.addEventListener("DOMContentLoaded", function () {
         const bookingForm = document.getElementById("bookingForm");
         const confirmationModal = document.getElementById(
           "bookingConfirmation"
         );
+        const submitBtn = bookingForm.querySelector(".submit-btn");
+        const btnText = submitBtn.querySelector(".btn-text");
+        const btnIcon = submitBtn.querySelector(".btn-icon");
 
         // Generate random reservation ID
         function generateReservationId() {
@@ -1870,70 +1926,295 @@
           });
         }
 
+        // Format time for display
+        function formatTime(timeValue) {
+          const timeMap = {
+            "18:00": "6:00 PM (Early Entry)",
+            "20:00": "8:00 PM (Prime Time)",
+            "22:00": "10:00 PM (Peak Hours)",
+            "00:00": "12:00 AM (Late Night)",
+          };
+          return timeMap[timeValue] || timeValue;
+        }
+
+        // Format event name
+        function formatEvent(eventValue) {
+          const eventMap = {
+            "midnight-madness": "Saturday - Midnight Madness",
+            "playhouse-monday": "Monday - Playhouse Mondays",
+            "brews-blues": "Wednesday - Brews & Blues",
+            "electric-thursday": "Thursday - Electric Thursdays",
+            "neon-friday": "Friday - Neon Fridays",
+            "sunset-sunday": "Sunday - Sunset Sessions",
+            "private-event": "Private Event/Party",
+          };
+          return eventMap[eventValue] || eventValue;
+        }
+
+        // Format category name
+        function formatCategory(categoryValue) {
+          const categoryMap = {
+            vvip: "VVIP - Premium Experience",
+            vip: "VIP - Elevated Service",
+            regular: "Regular - Standard Table",
+            booth: "Booth - Cozy Seating",
+          };
+          return categoryMap[categoryValue] || categoryValue;
+        }
+
+        // Show loading state
+        function showLoading() {
+          submitBtn.disabled = true;
+          btnText.textContent = "Processing...";
+          btnIcon.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+          submitBtn.style.opacity = "0.8";
+        }
+
+        // Reset button state
+        function resetButton() {
+          submitBtn.disabled = false;
+          btnText.textContent = "Book Now";
+          btnIcon.innerHTML = '<i class="fas fa-arrow-right"></i>';
+          submitBtn.style.opacity = "1";
+        }
+
+        // Show error message
+        function showError(message) {
+          // Create error element
+          let errorEl = document.querySelector(".form-error");
+          if (!errorEl) {
+            errorEl = document.createElement("div");
+            errorEl.className = "form-error";
+            errorEl.style.cssText = `
+                    background: rgba(255, 50, 50, 0.1);
+                    border: 1px solid rgba(255, 50, 50, 0.3);
+                    color: #ff6b6b;
+                    padding: 1rem;
+                    border-radius: 10px;
+                    margin-top: 1rem;
+                    text-align: center;
+                    animation: shake 0.5s ease;
+                `;
+            bookingForm.appendChild(errorEl);
+          }
+
+          errorEl.innerHTML = `
+                <i class="fas fa-exclamation-circle"></i>
+                <span style="margin-left: 10px;">${message}</span>
+                <button onclick="this.parentElement.remove()" style="
+                    background: none;
+                    border: none;
+                    color: inherit;
+                    cursor: pointer;
+                    float: right;
+                ">×</button>
+            `;
+
+          setTimeout(() => {
+            if (errorEl && errorEl.parentElement) {
+              errorEl.remove();
+            }
+          }, 5000);
+        }
+
+        // Show success modal
+        function showSuccessModal(reservationId, bookingData) {
+          // Update confirmation modal with details
+          document.getElementById("confirmationId").textContent = reservationId;
+          document.getElementById(
+            "confirmationDateTime"
+          ).textContent = `${formatDate(bookingData.date)} at ${formatTime(
+            bookingData.time
+          )}`;
+          document.getElementById("confirmationEvent").textContent =
+            formatEvent(bookingData.event);
+
+          // Show modal with animation
+          confirmationModal.style.display = "flex";
+
+          // Add subtle vibration effect
+          confirmationModal.querySelector(
+            ".confirmation-content"
+          ).style.animation = "none";
+          setTimeout(() => {
+            confirmationModal.querySelector(
+              ".confirmation-content"
+            ).style.animation = "modalPopIn 0.4s cubic-bezier(0.4, 0, 0.2, 1)";
+          }, 10);
+
+          // Auto-close after 30 seconds
+          setTimeout(() => {
+            if (confirmationModal.style.display === "flex") {
+              closeConfirmation();
+            }
+          }, 30000);
+        }
+
         // Handle form submission
-        bookingForm.addEventListener("submit", function (e) {
+        bookingForm.addEventListener("submit", async function (e) {
           e.preventDefault();
 
           // Get form data
           const formData = new FormData(bookingForm);
           const bookingData = Object.fromEntries(formData);
 
-          // Validate data
-          if (
-            !bookingData.name ||
-            !bookingData.phone ||
-            !bookingData.date ||
-            !bookingData.time ||
-            !bookingData.event
-          ) {
-            alert("Please fill in all required fields");
+          // Validate required fields
+          const requiredFields = [
+            "name",
+            "phone",
+            "date",
+            "time",
+            "event",
+            "party",
+            "category",
+          ];
+          const missingFields = requiredFields.filter(
+            (field) => !bookingData[field]
+          );
+
+          if (missingFields.length > 0) {
+            showError("Please fill in all required fields marked with *");
             return;
           }
 
-          // Generate confirmation details
+          // Validate phone number
+          const phoneRegex = /^\+?[0-9]{10,14}$/;
+          if (!phoneRegex.test(bookingData.phone.replace(/\s/g, ""))) {
+            showError("Please enter a valid phone number");
+            return;
+          }
+
+          // Validate date (not in past)
+          const selectedDate = new Date(bookingData.date);
+          const today = new Date();
+          today.setHours(0, 0, 0, 0);
+
+          if (selectedDate < today) {
+            showError("Please select a future date");
+            return;
+          }
+
+          // Show loading state
+          showLoading();
+
+          // Generate reservation ID
           const reservationId = generateReservationId();
-          const dateTime = `${formatDate(bookingData.date)} at ${
-            bookingData.time
-          }`;
 
-          // Update confirmation modal
-          document.getElementById("confirmationId").textContent = reservationId;
-          document.getElementById("confirmationDateTime").textContent =
-            dateTime;
-          document.getElementById("confirmationEvent").textContent =
-            document.querySelector(
-              `#bookingEvent option[value="${bookingData.event}"]`
-            ).textContent;
+          // Prepare data for EmailJS
+          const emailParams = {
+            reservation_id: reservationId,
+            customer_name: bookingData.name,
+            customer_phone: bookingData.phone,
+            reservation_date: formatDate(bookingData.date),
+            reservation_time: formatTime(bookingData.time),
+            event_type: formatEvent(bookingData.event),
+            party_size: bookingData.party,
+            table_category: formatCategory(bookingData.category),
+            special_requests: bookingData.requests || "None",
+            booking_timestamp: new Date().toLocaleString(),
+            discount_applied: "20% off for advance booking",
+            venue_name: "Zero Arena",
+            venue_address: "123 Club Street, Calabar, Nigeria",
+            venue_phone: "+234 810 123 4567",
+            venue_email: "bookings@zeroarena.com",
+          };
 
-          // Show confirmation modal
-          confirmationModal.style.display = "flex";
+          try {
+            // Send email using EmailJS
+            const response = await emailjs.send(
+              "service_6e8nzp3", //
+              "template_fraswac", //
+              emailParams
+            );
 
-          // Reset form
-          bookingForm.reset();
+            console.log("Email sent successfully:", response);
 
-          // Simulate sending data to server
-          console.log("Booking submitted:", bookingData);
+            // Also send a copy to customer (optional)
+            const customerEmailParams = {
+              reservation_id: reservationId,
+              customer_name: bookingData.name,
+              reservation_date: formatDate(bookingData.date),
+              reservation_time: formatTime(bookingData.time),
+              event_type: formatEvent(bookingData.event),
+              venue_name: "Zero Arena",
+              venue_address: "123 Nndidem Usang Iso Road, Calabar, Nigeria",
+              venue_phone: "+234 810 123 4567",
+            };
 
-          // In a real application, you would send this data to your server
-          // fetch('/api/bookings', {
-          //     method: 'POST',
-          //     headers: {'Content-Type': 'application/json'},
-          //     body: JSON.stringify(bookingData)
-          // })
-          // .then(response => response.json())
-          // .then(data => {
-          //     // Handle successful booking
-          //     showConfirmation(data.reservationId);
-          // })
-          // .catch(error => {
-          //     console.error('Error:', error);
-          //     alert('There was an error submitting your booking. Please try again.');
-          // });
+            // Uncomment to send confirmation to customer (requires customer email field)
+            // await emailjs.send(
+            //     'YOUR_SERVICE_ID',
+            //     'CUSTOMER_CONFIRMATION_TEMPLATE_ID',
+            //     customerEmailParams
+            // );
+
+            // Reset form
+            bookingForm.reset();
+
+            // Show success modal
+            showSuccessModal(reservationId, bookingData);
+
+            // Reset button
+            resetButton();
+
+            // await saveToDatabase(bookingData, reservationId);
+          } catch (error) {
+            console.error("Error sending email:", error);
+
+            // Show user-friendly error message
+            let errorMessage = "Failed to send booking. Please try again.";
+
+            if (error.status === 0) {
+              errorMessage = "Network error. Please check your connection.";
+            } else if (error.text) {
+              try {
+                const errorData = JSON.parse(error.text);
+                errorMessage = errorData.message || errorMessage;
+              } catch (e) {
+                // If we can't parse the error, use generic message
+              }
+            }
+
+            showError(errorMessage);
+            resetButton();
+          }
         });
 
-        // Close confirmation modal
+        // Save to database function (optional)
+        async function saveToDatabase(bookingData, reservationId) {
+          try {
+            const response = await fetch("/api/bookings", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                ...bookingData,
+                reservationId,
+                status: "pending",
+                createdAt: new Date().toISOString(),
+              }),
+            });
+
+            if (!response.ok) {
+              throw new Error("Failed to save to database");
+            }
+
+            return await response.json();
+          } catch (error) {
+            console.error("Database save error:", error);
+            // Don't show error to user - email was sent successfully
+          }
+        }
+
+        // Close confirmation modal function
         window.closeConfirmation = function () {
           confirmationModal.style.display = "none";
+
+          // Reset form completely if needed
+          setTimeout(() => {
+            bookingForm.reset();
+          }, 300);
         };
 
         // Close modal when clicking outside
@@ -1953,55 +2234,175 @@
           }
         });
 
-        // Input validation
+        // Add shake animation for errors
+        const style = document.createElement("style");
+        style.textContent = `
+            @keyframes shake {
+                0%, 100% { transform: translateX(0); }
+                10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+                20%, 40%, 60%, 80% { transform: translateX(5px); }
+            }
+            
+            .form-error {
+                animation: shake 0.5s ease;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Phone number formatting
         const phoneInput = document.getElementById("bookingPhone");
         phoneInput.addEventListener("input", function (e) {
           let value = e.target.value.replace(/\D/g, "");
-          if (value.length > 11) value = value.slice(0, 11);
 
-          if (value.length > 0) {
-            if (value.startsWith("0")) {
-              value = "+234" + value.slice(1);
-            } else if (value.length === 10) {
-              value = "+234" + value;
-            } else if (value.length === 11 && value.startsWith("234")) {
-              value = "+" + value;
-            }
+          // Auto-format for Nigerian numbers
+          if (value.startsWith("0") && value.length <= 11) {
+            value = value.slice(0, 11);
+          } else if (value.startsWith("234") && value.length <= 13) {
+            value = value.slice(0, 13);
+          } else if (value.length > 0) {
+            value = value.slice(0, 15);
           }
 
-          e.target.value = value;
+          // Add + if it's an international number
+          if (value.startsWith("234") && value.length >= 10) {
+            e.target.value = "+" + value;
+          } else if (value.startsWith("0") && value.length >= 10) {
+            e.target.value = "+234" + value.slice(1);
+          } else {
+            e.target.value = value;
+          }
         });
 
-        // Date validation - prevent past dates
+        // Set minimum date for date picker
         const dateInput = document.getElementById("bookingDate");
         const today = new Date().toISOString().split("T")[0];
         dateInput.min = today;
 
-        // Add animation to form inputs on focus
-        const formInputs = document.querySelectorAll("input, select, textarea");
-        formInputs.forEach((input) => {
-          input.addEventListener("focus", function () {
-            this.parentElement.parentElement.classList.add("focused");
-          });
-
-          input.addEventListener("blur", function () {
-            this.parentElement.parentElement.classList.remove("focused");
-          });
-        });
-
-        // Initialize with sample data for demo
+        // Demo function for testing
         window.demoBooking = function () {
           document.getElementById("bookingName").value = "Alex Johnson";
           document.getElementById("bookingPhone").value = "+2348101234567";
-          document.getElementById("bookingDate").value = "2024-12-15";
+          document.getElementById("bookingDate").value = new Date(
+            Date.now() + 7 * 24 * 60 * 60 * 1000
+          )
+            .toISOString()
+            .split("T")[0]; // One week from now
           document.getElementById("bookingTime").value = "22:00";
           document.getElementById("bookingEvent").value = "midnight-madness";
           document.getElementById("bookingParty").value = "5-6";
           document.getElementById("bookingCategory").value = "vip";
           document.getElementById("bookingRequests").value =
             "Celebrating a birthday - please have a bottle of champagne ready!";
+
+          // Show success message that it's ready
+          const demoMsg = document.createElement("div");
+          demoMsg.className = "form-error";
+          demoMsg.style.cssText = `
+                background: rgba(0, 247, 255, 0.1);
+                border: 1px solid rgba(0, 247, 255, 0.3);
+                color: var(--secondary);
+                padding: 1rem;
+                border-radius: 10px;
+                margin-top: 1rem;
+                text-align: center;
+            `;
+          demoMsg.innerHTML = `
+                <i class="fas fa-info-circle"></i>
+                <span style="margin-left: 10px;">Demo form filled! Click "Book Now" to test submission.</span>
+                <button onclick="this.parentElement.remove()" style="
+                    background: none;
+                    border: none;
+                    color: inherit;
+                    cursor: pointer;
+                    float: right;
+                ">×</button>
+            `;
+
+          // Remove any existing messages
+          const existingMsg = document.querySelector(".form-error");
+          if (existingMsg) existingMsg.remove();
+
+          bookingForm.appendChild(demoMsg);
+
+          setTimeout(() => {
+            if (demoMsg && demoMsg.parentElement) {
+              demoMsg.remove();
+            }
+          }, 5000);
+        };
+
+        // Simulate successful booking for testing without EmailJS setup
+        window.simulateBooking = function () {
+          const reservationId = generateReservationId();
+          const bookingData = {
+            name: "Test User",
+            phone: "+2348101234567",
+            date: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000)
+              .toISOString()
+              .split("T")[0],
+            time: "22:00",
+            event: "midnight-madness",
+          };
+
+          showSuccessModal(reservationId, bookingData);
+          bookingForm.reset();
         };
       });
     </script>
+
+    <style>
+      /* Add these styles to your existing CSS */
+      .form-error {
+        background: rgba(255, 50, 50, 0.1);
+        border: 1px solid rgba(255, 50, 50, 0.3);
+        color: #ff6b6b;
+        padding: 1rem;
+        border-radius: 10px;
+        margin-top: 1rem;
+        text-align: center;
+        animation: shake 0.5s ease;
+      }
+
+      .form-error i {
+        margin-right: 8px;
+      }
+
+      @keyframes shake {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+          transform: translateX(-5px);
+        }
+        20%,
+        40%,
+        60%,
+        80% {
+          transform: translateX(5px);
+        }
+      }
+
+      button:disabled {
+        cursor: not-allowed !important;
+      }
+
+      .fa-spinner {
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </body>
 </html>
