@@ -1059,6 +1059,14 @@ section {
     height: 180px;
   }
 
+  .top-row .ticker-track {
+    animation: tickerLeft 40s linear infinite;
+  }
+
+  .bottom-row .ticker-track {
+    animation: tickerRight 40s linear infinite;
+  }
+
   .gallery-controls {
     display: flex;
     flex-direction: column;
@@ -1082,6 +1090,14 @@ section {
 
   .modal-content {
     width: 95%;
+  }
+
+  .top-row .ticker-track {
+    animation: tickerLeft 40s linear infinite;
+  }
+
+  .bottom-row .ticker-track {
+    animation: tickerRight 40s linear infinite;
   }
 }
 
